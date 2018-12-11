@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="3c834af3-27ed-4b07-85cd-95bfa59b9161" activeEnvironment="Default" name="Library-Project" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="a4963402-fb23-40c3-9f34-8eac7b972c97" name="Library"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="398bd457-338f-4bdb-81d6-38e534aff4fa" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Random Data with Groovy" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Random Data" id="9dc47e64-f221-4daf-b941-83efe647e345"><con:settings/><con:config><script>testCase = context.testCase
+<con:soapui-project id="3c834af3-27ed-4b07-85cd-95bfa59b9161" activeEnvironment="Default" name="soapui-groovy-library" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="a4963402-fb23-40c3-9f34-8eac7b972c97" name="Library"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="398bd457-338f-4bdb-81d6-38e534aff4fa" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Random Data with Groovy" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Random Data" id="9dc47e64-f221-4daf-b941-83efe647e345"><con:settings/><con:config><script>testCase = context.testCase
 
 def randomEmail(String domain-part) {
 	def local-part = userName("user-")
@@ -106,7 +106,7 @@ log.info context.expand('${=import java.text.SimpleDateFormat ; new SimpleDateFo
 
 log.info context.expand('${=def lastWeek = new Date();lastWeek++;lastWeek.format("YYYY-MM-dd")}')
 
-log.info context.expand('${= def nextWeek = new Date() + 7; nextWeek.format("yy-MM-dd")}')
+log.info context.expand('${= def nextWeek = new Date() + 7; nextWeek.format("YYYY-MM-dd")}')
 </script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b5f0d6c4-3b1e-4e0e-9c36-9716736d3718" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Using WsdlTestStepFactory" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="089d835d-44a7-489e-a917-98aec8ad3791"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.teststeps.registry
 Class WsdlTestStepFactory
 
