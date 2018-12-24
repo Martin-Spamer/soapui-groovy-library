@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<user>
+		<name>Peter</name>
+		<score>7</score>
+	</user>
+	<user>
+		<name>John</name>
+		<score>10</score>
+	</user>
+</list>
